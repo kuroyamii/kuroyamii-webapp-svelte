@@ -1,7 +1,8 @@
-import App from './App.svelte'
+import indexSvelte from "./routes/index.svelte";
+import global from "./styles/global.css";
 
-const app = new App({
-  target: document.getElementById('app')
-})
+const app = new indexSvelte({
+  target: document.getElementById("app"),
+});
 
-export default app
+export default app;
