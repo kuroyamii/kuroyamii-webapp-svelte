@@ -4,7 +4,10 @@
   import { each } from "svelte/internal";
 </script>
 
-<div class="footer flex flex-row items-center justify-around w-full">
+<div
+  class="footer flex flex-row items-center justify-around w-full"
+  data-aos="fade-up"
+>
   {#each SocialMedia as data}
     <SocialMediaButton
       name={data.Name}

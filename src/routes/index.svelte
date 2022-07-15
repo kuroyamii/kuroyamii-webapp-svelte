@@ -2,7 +2,16 @@
   import { Router, Route, Link } from "svelte-navigator";
   import background from "/anime bg 2.png";
   import LandingPage from "../lib/subpage/LandingPage.svelte";
+  import { onMount } from "svelte";
+  import AOS from "aos";
+  onMount(() => {
+    AOS.init();
+  });
 </script>
+
+<svelte:head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</svelte:head>
 
 <main>
   <img class="background" src={background} alt="" />

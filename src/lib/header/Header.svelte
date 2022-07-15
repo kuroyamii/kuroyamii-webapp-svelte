@@ -2,7 +2,10 @@
   import Logo from "/Kuroyamii Logo.png";
 </script>
 
-<div class="header w-full flex items-center justify-center">
+<div
+  class="header w-full flex items-center justify-center"
+  data-aos="fade-down"
+>
   <img
     src={Logo}
     alt="Kuroyamii Music"
